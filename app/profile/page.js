@@ -32,7 +32,7 @@ export default function ProfilePage() {
         {/* Followers Section */}
         <div className="flex text-center border-t border-b">
           <div className="w-1/2 py-4">
-            <h3 className="font-bold text-lg">1501</h3>
+            <h3 className="font-bold text-lg">1500</h3>
             <p className="text-gray-500 text-sm">Followers</p>
           </div>
           <div className="w-1/2 py-4 border-l">
