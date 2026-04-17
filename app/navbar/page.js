@@ -11,9 +11,9 @@ export default function Navbar() {
         <Link href="/">Home</Link>
         <Link href="/setting">Setting</Link>
         <Link href="/notification">Notification</Link>
-        <Link href="/profile">Profile</Link>
         <Link href="/login">Login</Link>
         <Link href="/signup">Signup</Link>
+        <Link href="/profile">Profile</Link>
       </div>
     </div>
   );
