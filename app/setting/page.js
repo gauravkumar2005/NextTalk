@@ -16,7 +16,7 @@ export default function SettingsPage() {
 
         {/* Dark Mode Toggle */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>🌙 abcd</span>
+          <span>🌙 Dark Mode</span>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className={`w-12 h-6 flex items-center rounded-full p-1 transition ${
