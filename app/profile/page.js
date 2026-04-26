@@ -51,7 +51,7 @@ export default function ProfilePage() {
               <div>
                 <p className="font-medium">Chats</p>
                 <p className="text-sm text-gray-500">
-                  Check your chat history
+                  Check your chat abcd
                 </p>
               </div>
             </div>
