@@ -67,7 +67,7 @@ export default function HelpPage() {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-500">Still need help?</p>
           <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 w-full">
-            Contact Su
+            Contact Support
           </button>
         </div>
 
