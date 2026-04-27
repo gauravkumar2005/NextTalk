@@ -36,7 +36,7 @@ export default function HelpPage() {
         
         {/* Header */}
         <h2 className="text-xl font-semibold mb-4 text-center">
-          abcd
+          Help Center
         </h2>
 
         {/* FAQ List */}
