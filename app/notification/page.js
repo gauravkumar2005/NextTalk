@@ -29,7 +29,7 @@ export default function NotificationsPage() {
       <div className="w-[360px] bg-white rounded-2xl shadow-lg p-5">
         
         {/* Header */}
-        <h2 className="text-lg font-semibold mb-4"></h2>
+        <h2 className="text-lg font-semibold mb-4">Notifications</h2>
 
         {/* Notification List */}
         <div className="space-y-4">
