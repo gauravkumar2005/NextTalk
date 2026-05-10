@@ -40,7 +40,7 @@ export default function Signup() {
         createdAt: new Date(),
       });
 
-      setMessage("✅ Signup + Data Saved in Firestore");
+      setMessage("✅ Signup successfull");
 
       // reset
       setName(""); // ✅ FIX
