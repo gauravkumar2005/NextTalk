@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 export default function SettingsPage() {
@@ -57,7 +59,9 @@ export default function SettingsPage() {
 
         {/* Help Center */}
         <div className="flex items-center justify-between py-3">
-          <span>❓ Help Center</span>
+          <Link href="/help">
+            <span>❓ Help Center</span>
+          </Link>
           <span className="text-gray-400">›</span>
         </div>
 
