@@ -45,7 +45,7 @@ export default function Login() {
       <div className="bg-white p-8 rounded-2xl shadow-lg w-[350px]">
         
         <h2 className="text-2xl font-bold text-center mb-6">
-           🔐
+          Login 🔐
         </h2>
 
         <form onSubmit={handleLogin} className="flex flex-col gap-4">
