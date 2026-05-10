@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { MoreVertical, MessageCircle, Heart, User, Settings } from "lucide-react";
 
 export default function ProfilePage() {
@@ -63,7 +65,9 @@ export default function ProfilePage() {
             <div className="flex items-center gap-3">
               <Heart className="text-gray-600" />
               <div>
-                <p className="font-medium">Archived</p>
+                <Link href="/archived">
+                  <p className="font-medium">Archived</p>
+                </Link>
                 <p className="text-sm text-gray-500">
                   Find your archived chats
                 </p>
