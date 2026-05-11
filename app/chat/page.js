@@ -73,7 +73,7 @@ export default function ChatPage() {
           </div>
 
           <div className="p-2 bg-white rounded cursor-pointer">
-            
+            User 2
           </div>
         </div>
       </div>
