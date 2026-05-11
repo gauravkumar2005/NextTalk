@@ -59,10 +59,10 @@ export default function ChatPage() {
   }, []);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col md:flex-row h-screen">
 
       {/* 🔹 Sidebar */}
-      <div className="w-1/4 bg-black p-4">
+      <div className="w-full md:w-1/4 bg-black p-4">
         <h2 className="text-xl text-white font-bold mb-4">
           Users
         </h2>
@@ -79,7 +79,7 @@ export default function ChatPage() {
       </div>
 
       {/* 🔹 Chat Section */}
-      <div className="w-3/4 flex flex-col">
+      <div className="w-full md:w-3/4 flex flex-col">
 
         {/* Chat Header */}
         <div className="bg-gray-400 p-4 font-bold">
@@ -115,7 +115,7 @@ export default function ChatPage() {
         </div>
 
         {/* Input Box */}
-        <div className="p-4 flex gap-2 bg-white">
+        <div className="p-4 flex flex-col sm:flex-row gap-2 bg-white">
 
           <input
             type="text"
@@ -127,7 +127,7 @@ export default function ChatPage() {
 
           <button
             onClick={sendMessage}
-            className="bg-blue-500 text-white px-4 rounded"
+            className="bg-blue-500 text-white px-4 py-2 rounded w-full sm:w-auto"
           >
             Send
           </button>
