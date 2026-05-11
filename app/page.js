@@ -9,7 +9,7 @@ export default function Home() {
      <div className="bg-red-600 wt-6 p-2 text-center hover:bg-green-600 rounded-md">
       <Link href="/chat"
        className="text-white px-6 py-3 rounded-md"
-      >Go to Chat</Link>
+      ></Link>
      </div>
     </div>
   );
