@@ -1,31 +1,80 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import {
+  collection,
+  addDoc,
+  onSnapshot,
+  query,
+  orderBy,
+  serverTimestamp,
+} from "firebase/firestore";
+
+import { db } from "../lib/firebase";
 
 export default function ChatPage() {
-  const [messages, setMessages] = useState([
-    { text: "Hello 👋", sender: "other" },
-    { text: "Hi bro!", sender: "me" },
-  ]);
 
+  // Messages State
+  const [messages, setMessages] = useState([]);
+
+  // Input State
   const [input, setInput] = useState("");
 
-  const sendMessage = () => {
+  // Send Message
+  const sendMessage = async () => {
+
     if (input.trim() === "") return;
 
-    setMessages([...messages, { text: input, sender: "me" }]);
+    await addDoc(collection(db, "messages"), {
+      text: input,
+      sender: "me",
+      createdAt: serverTimestamp(),
+    });
+
     setInput("");
   };
+
+  // Real Time Listener
+  useEffect(() => {
+
+    const q = query(
+      collection(db, "messages"),
+      orderBy("createdAt")
+    );
+
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+
+      const allMessages = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      setMessages(allMessages);
+
+    });
+
+    return () => unsubscribe();
+
+  }, []);
 
   return (
     <div className="flex h-screen">
 
       {/* 🔹 Sidebar */}
       <div className="w-1/4 bg-black p-4">
-        <h2 className="text-xl text-white font-bold mb-4">Users</h2>
+        <h2 className="text-xl text-white font-bold mb-4">
+          Users
+        </h2>
+
         <div className="space-y-2">
-          <div className="p-2 bg-white rounded cursor-pointer">User 1</div>
-          <div className="p-2 bg-white rounded cursor-pointer">User 2</div>
+          <div className="p-2 bg-white rounded cursor-pointer">
+            User 1
+          </div>
+
+          <div className="p-2 bg-white rounded cursor-pointer">
+            User 2
+          </div>
         </div>
       </div>
 
@@ -39,13 +88,17 @@ export default function ChatPage() {
 
         {/* Messages */}
         <div className="flex-1 p-4 overflow-y-auto bg-gray-300">
-          {messages.map((msg, index) => (
+
+          {messages.map((msg) => (
             <div
-              key={index}
+              key={msg.id}
               className={`mb-2 flex ${
-                msg.sender === "me" ? "justify-end" : "justify-start"
+                msg.sender === "me"
+                  ? "justify-end"
+                  : "justify-start"
               }`}
             >
+
               <span
                 className={`px-4 py-2 rounded-lg ${
                   msg.sender === "me"
@@ -55,12 +108,15 @@ export default function ChatPage() {
               >
                 {msg.text}
               </span>
+
             </div>
           ))}
+
         </div>
 
         {/* Input Box */}
         <div className="p-4 flex gap-2 bg-white">
+
           <input
             type="text"
             className="flex-1 border p-2 rounded"
@@ -75,6 +131,7 @@ export default function ChatPage() {
           >
             Send
           </button>
+
         </div>
 
       </div>
