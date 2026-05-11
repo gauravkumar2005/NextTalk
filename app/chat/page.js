@@ -64,7 +64,7 @@ export default function ChatPage() {
       {/* 🔹 Sidebar */}
       <div className="w-1/4 bg-black p-4">
         <h2 className="text-xl text-white font-bold mb-4">
-          
+          Users
         </h2>
 
         <div className="space-y-2">
