@@ -99,7 +99,7 @@ export default function ProfilePage() {
                   <p className="font-medium">Settings</p>
                 </Link>
                 <p className="text-sm text-gray-500">
-                  Password and Security
+                  Password and 
                 </p>
               </div>
             </div>
