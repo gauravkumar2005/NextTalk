@@ -35,7 +35,9 @@ export default function SettingsPage() {
 
         {/* Notifications */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>🔔 Notifications</span>
+          <Link href="/notification">
+               <span>🔔 Notifications</span>
+          </Link>
           <span className="text-gray-400">›</span>
         </div>
 
