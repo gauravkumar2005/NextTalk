@@ -43,7 +43,7 @@ export default function SettingsPage() {
 
         {/* Account */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>👤 </span>
+          <span>👤 Account</span>
           <span className="text-gray-400">›</span>
         </div>
 
