@@ -83,7 +83,7 @@ export default function ProfilePage() {
               <div>
                 <p className="font-medium">My Profile</p>
                 <p className="text-sm text-gray-500">
-                  Change your profile details
+                  Change your profile 
                 </p>
               </div>
             </div>
