@@ -95,7 +95,9 @@ export default function ProfilePage() {
             <div className="flex items-center gap-3">
               <Settings className="text-gray-600" />
               <div>
-                <p className="font-medium">Settings</p>
+                <Link href="/settings">
+                  <p className="font-medium">Settings</p>
+                </Link>
                 <p className="text-sm text-gray-500">
                   Password and Security
                 </p>

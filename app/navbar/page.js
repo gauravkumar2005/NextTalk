@@ -16,7 +16,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-lg font-semibold">
           <Link href="/">Home</Link>
-          <Link href="/setting">Setting</Link>
+          <Link href="/settings">Settings</Link>
           <Link href="/notification">Notification</Link>
           <Link href="/login">Login</Link>
           <Link href="/signup">Signup</Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
       {open && (
         <div className="flex flex-col gap-4 mt-4 md:hidden text-lg font-semibold">
           <Link href="/">Home</Link>
-          <Link href="/setting">Setting</Link>
+          <Link href="/settings">Settings</Link>
           <Link href="/notification">Notification</Link>
           <Link href="/login">Login</Link>
           <Link href="/signup">Signup</Link>
