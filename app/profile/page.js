@@ -9,7 +9,7 @@ export default function ProfilePage() {
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       
       {/* Mobile Card */}
-      <div className="w-[360px] bg-white rounded-3xl shadow-xl overflow-hidden">
+      <div className="w-full max-w-sm bg-white rounded-3xl shadow-xl overflow-hidden">
         
         {/* Top Section */}
         <div className="bg-gray-200 p-6 text-center relative">
