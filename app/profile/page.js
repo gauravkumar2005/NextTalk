@@ -52,7 +52,7 @@ export default function ProfilePage() {
               <MessageCircle className="text-gray-600 w-5 h-5 sm:w-6 sm:h-6" />
               <div>
                 <p className="font-medium text-sm sm-text-base">Chats</p>
-                <p className="text-sm text-gray-500">
+                <p className="text-xs sm:text-sm text-gray-500">
                   Check your chat history
                 </p>
               </div>
