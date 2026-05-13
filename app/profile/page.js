@@ -25,10 +25,10 @@ export default function ProfilePage() {
           />
 
           {/* Name */}
-          <h2 className="mt-3 text-lg font-semibold">Rohit</h2>
+          <h2 className="mt-3 text-base sm-text-lg font-semibold">Rohit</h2>
 
           {/* Location */}
-          <p className="text-sm text-gray-500">📍 IN, India</p>
+          <p className="text-xs sm:text-sm text-gray-500">📍 IN, India</p>
         </div>
 
         {/* Followers Section */}
