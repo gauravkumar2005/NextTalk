@@ -33,7 +33,7 @@ export default function ProfilePage() {
 
         {/* Followers Section */}
         <div className="flex text-center border-t border-b">
-          <div className="w-1/2 py-4">
+          <div className="w-1/2 py-4 sm:py-4">
             <h3 className="font-bold text-lg">1500</h3>
             <p className="text-gray-500 text-sm">Followers</p>
           </div>
@@ -49,9 +49,9 @@ export default function ProfilePage() {
           {/* Chats */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <MessageCircle className="text-gray-600" />
+              <MessageCircle className="text-gray-600 w-5 h-5 sm:w-6 sm:h-6" />
               <div>
-                <p className="font-medium">Chats</p>
+                <p className="font-medium text-sm sm-text-base">Chats</p>
                 <p className="text-sm text-gray-500">
                   Check your chat history
                 </p>
