@@ -21,7 +21,7 @@ export default function ProfilePage() {
           <img
             src="https://i.pravatar.cc/150?img=12"
             alt="profile"
-            className="w-20 h-20 rounded-full mx-auto border-4 border-white"
+            className="w-16 h-16 sm:w-20 sm:h-20 rounded-full mx-auto border-4 border-white"
           />
 
           {/* Name */}
