@@ -6,7 +6,7 @@ import { MoreVertical, MessageCircle, Heart, User, Settings } from "lucide-react
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4">
       
       {/* Mobile Card */}
       <div className="w-full max-w-sm bg-white rounded-3xl shadow-xl overflow-hidden">
