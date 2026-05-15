@@ -15,27 +15,30 @@ import { db } from "../lib/firebase";
 
 export default function ChatPage() {
 
-  // Messages State
+  // ================= USERS =================
+  const [currentUser, setCurrentUser] = useState("Rohit");
+
+  // ================= MESSAGES =================
   const [messages, setMessages] = useState([]);
 
-  // Input State
+  // ================= INPUT =================
   const [input, setInput] = useState("");
 
-  // Send Message
+  // ================= SEND MESSAGE =================
   const sendMessage = async () => {
 
     if (input.trim() === "") return;
 
     await addDoc(collection(db, "messages"), {
       text: input,
-      sender: "me",
+      sender: currentUser,
       createdAt: serverTimestamp(),
     });
 
     setInput("");
   };
 
-  // Real Time Listener
+  // ================= REALTIME LISTENER =================
   useEffect(() => {
 
     const q = query(
@@ -61,73 +64,107 @@ export default function ChatPage() {
   return (
     <div className="flex flex-col md:flex-row h-screen">
 
-      {/* 🔹 Sidebar */}
+      {/* ================= SIDEBAR ================= */}
       <div className="w-full md:w-1/4 bg-black p-4">
+
         <h2 className="text-xl text-white font-bold mb-4">
           Users
         </h2>
 
-        <div className="space-y-2">
-          <div className="p-2 bg-white rounded cursor-pointer">
-            User 1
-          </div>
+        <div className="space-y-3">
 
-          <div className="p-2 bg-white rounded cursor-pointer">
-            User 2
-          </div>
+          {/* Rohit */}
+          <button
+            onClick={() => setCurrentUser("Rohit")}
+            className={`w-full p-3 rounded text-left font-medium ${
+              currentUser === "Rohit"
+                ? "bg-blue-500 text-white"
+                : "bg-white text-black"
+            }`}
+          >
+            Rohit
+          </button>
+
+          {/* Aman */}
+          <button
+            onClick={() => setCurrentUser("Aman")}
+            className={`w-full p-3 rounded text-left font-medium ${
+              currentUser === "Aman"
+                ? "bg-blue-500 text-white"
+                : "bg-white text-black"
+            }`}
+          >
+            Aman
+          </button>
+
         </div>
+
       </div>
 
-      {/* 🔹 Chat Section */}
+      {/* ================= CHAT SECTION ================= */}
       <div className="w-full md:w-3/4 flex flex-col">
 
-        {/* Chat Header */}
-        <div className="bg-gray-400 p-4 font-bold">
-          Chat
+        {/* ================= HEADER ================= */}
+        <div className="bg-gray-400 p-4 font-bold text-lg">
+          Chat - {currentUser}
         </div>
 
-        {/* Messages */}
+        {/* ================= MESSAGES ================= */}
         <div className="flex-1 p-4 overflow-y-auto bg-gray-300">
 
           {messages.map((msg) => (
+
             <div
               key={msg.id}
-              className={`mb-2 flex ${
-                msg.sender === "me"
+              className={`mb-4 flex ${
+                msg.sender === currentUser
                   ? "justify-end"
                   : "justify-start"
               }`}
             >
 
-              <span
-                className={`px-4 py-2 rounded-lg ${
-                  msg.sender === "me"
-                    ? "bg-blue-500 text-white"
-                    : "bg-white"
-                }`}
-              >
-                {msg.text}
-              </span>
+              <div>
+
+                {/* Sender Name */}
+                <p className="text-xs text-gray-700 mb-1">
+                  {msg.sender}
+                </p>
+
+                {/* Message Bubble */}
+                <div
+                  className={`px-4 py-2 rounded-lg max-w-[250px] break-words ${
+                    msg.sender === currentUser
+                      ? "bg-blue-500 text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  {msg.text}
+                </div>
+
+              </div>
 
             </div>
+
           ))}
 
         </div>
 
-        {/* Input Box */}
+        {/* ================= INPUT SECTION ================= */}
         <div className="p-4 flex flex-col sm:flex-row gap-2 bg-white">
 
+          {/* Input */}
           <input
             type="text"
-            className="flex-1 border p-2 rounded"
+            className="flex-1 border p-3 rounded outline-none"
             placeholder="Type a message..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
 
+          {/* Send Button */}
           <button
             onClick={sendMessage}
-            className="bg-blue-500 text-white px-4 py-2 rounded w-full sm:w-auto"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded w-full sm:w-auto"
           >
             Send
           </button>
