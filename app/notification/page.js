@@ -26,7 +26,7 @@ export default function NotificationsPage() {
     <div className="min-h-screen bg-gray-200 flex justify-center items-center">
       
       {/* Card */}
-      <div className="w-[360px] bg-white rounded-2xl shadow-lg p-5">
+      <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg p-5">
         
         {/* Header */}
         <h2 className="text-lg font-semibold mb-4">Notifications</h2>
