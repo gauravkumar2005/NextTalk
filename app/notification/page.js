@@ -32,7 +32,7 @@ export default function NotificationsPage() {
         <h2 className="text-lg font-semibold mb-4">Notifications</h2>
 
         {/* Notification List */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           {notifications.map((item) => (
             <div
               key={item.id}
