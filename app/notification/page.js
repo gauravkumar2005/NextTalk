@@ -42,7 +42,7 @@ export default function NotificationsPage() {
                 <p className="font-medium text-sm sm:text-base">{item.title}</p>
                 <p className="text-sm text-gray-500">{item.desc}</p>
               </div>
-              <span className="text-xs text-gray-400">{item.time}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{item.time}</span>
             </div>
           ))}
         </div>
