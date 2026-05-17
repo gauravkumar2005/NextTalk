@@ -36,7 +36,7 @@ export default function NotificationsPage() {
           {notifications.map((item) => (
             <div
               key={item.id}
-              className="p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition flex justify-between items-start"
+              className="p-3 sm:p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition flex justify-between items-start"
             >
               <div>
                 <p className="font-medium">{item.title}</p>
