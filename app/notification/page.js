@@ -36,10 +36,10 @@ export default function NotificationsPage() {
           {notifications.map((item) => (
             <div
               key={item.id}
-              className="p-3 sm:p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition flex justify-between items-start"
+              className="p-3 sm:p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition flex justify-between items-start gap-3"
             >
               <div>
-                <p className="font-medium">{item.title}</p>
+                <p className="font-medium text-sm sm:text-base">{item.title}</p>
                 <p className="text-sm text-gray-500">{item.desc}</p>
               </div>
               <span className="text-xs text-gray-400">{item.time}</span>
