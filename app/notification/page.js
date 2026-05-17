@@ -23,7 +23,7 @@ export default function NotificationsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-200 flex justify-center items-center">
+    <div className="min-h-screen bg-gray-200 flex justify-center items-center p-4">
       
       {/* Card */}
       <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg p-5">
