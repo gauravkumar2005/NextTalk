@@ -38,7 +38,7 @@ export default function ProfilePage() {
             <p className="text-gray-500 text-sm">Followers</p>
           </div>
           <div className="w-1/2 py-4 border-l">
-            <h3 className="font-bold text-lg">700</h3>
+            <h3 className="font-bold text-base sm:text-lg">700</h3>
             <p className="text-gray-500 text-sm">Following</p>
           </div>
         </div>
