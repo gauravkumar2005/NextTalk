@@ -79,7 +79,7 @@ export default function ProfilePage() {
           {/* My Profile */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <User className="text-gray-600" />
+              <User className="text-gray-600 w-5 h-5 sm:w-6 sm:h-6" />
               <div>
                 <p className="font-medium">My Profile</p>
                 <p className="text-sm text-gray-500">
