@@ -10,7 +10,7 @@ A modern real-time chat application built with **Next.js** that enables users to
 
 ## 🌐 Live Demo
 
-🔗 **Demo:** https://your-demo-link.vercel.app
+🔗 **Demo:** https://next-talk-eight.vercel.app/
 
 ## ✨ Features
 
