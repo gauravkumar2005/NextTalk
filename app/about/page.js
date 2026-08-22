@@ -14,7 +14,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-gray-50">
 
       {/* Hero Section */}
-      <section className="px-4 py-16 sm:px-6 md:py-24">
+      <section className="min-h-[70vh] px-4 py-24 sm:px-6 md:min-h-[75vh] md:py-32 flex items-center">
         <div className="mx-auto max-w-4xl text-center">
 
           <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500 text-white shadow-lg">
