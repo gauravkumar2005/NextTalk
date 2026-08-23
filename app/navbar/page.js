@@ -17,6 +17,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-8 text-lg font-semibold">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/notification">Notification</Link>
           <Link href="/login">Login</Link>
           <Link href="/signup">Signup</Link>
@@ -37,6 +38,7 @@ export default function Navbar() {
         <div className="flex flex-col gap-4 mt-4 md:hidden text-lg font-semibold">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/notification">Notification</Link>
           <Link href="/login">Login</Link>
           <Link href="/signup">Signup</Link>
