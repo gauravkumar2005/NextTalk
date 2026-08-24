@@ -12,7 +12,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-50">
 
       {/* Hero Section */}
-      <section className="px-4 py-20 sm:px-6 md:py-28">
+      <section className="min-h-[55vh] flex items-center px-4 py-20 sm:px-6 md:min-h-[60vh] md:py-28">
         <div className="mx-auto max-w-3xl text-center">
 
           <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500 text-white shadow-lg">
