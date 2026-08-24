@@ -52,7 +52,7 @@ export default function ContactPage() {
             </p>
 
             {/* Email */}
-            <div className="mt-8 flex items-start gap-4">
+            <div className="mt-8 flex items-start gap-4 rounded-xl p-3 transition-all duration-200 hover:bg-white hover:shadow-md hover:-translate-y-1 cursor-pointer">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-blue-500 shadow-sm">
                 <Mail size={22} />
               </div>
