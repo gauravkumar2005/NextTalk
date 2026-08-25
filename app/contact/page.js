@@ -105,7 +105,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+          <div className="rounded-2xl bg-white p-6 shadow-sm sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
             <h2 className="text-2xl font-bold text-gray-900">
               Send us a message
