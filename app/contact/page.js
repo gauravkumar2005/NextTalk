@@ -69,7 +69,7 @@ export default function ContactPage() {
             </div>
 
             {/* Chat Support */}
-            <div className="mt-6 flex items-start gap-4">
+            <div className="mt-6 flex items-start gap-4 rounded-xl p-3 transition-all duration-200 hover:bg-white hover:shadow-md hover:-translate-y-1 cursor-pointer">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-blue-500 shadow-sm">
                 <MessageCircle size={22} />
               </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
             </div>
 
             {/* Help */}
-            <div className="mt-6 flex items-start gap-4">
+            <div className="mt-6 flex items-start gap-4 rounded-xl p-3 transition-all duration-200 hover:bg-white hover:shadow-md hover:-translate-y-1 cursor-pointer">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-blue-500 shadow-sm">
                 <HelpCircle size={22} />
               </div>
