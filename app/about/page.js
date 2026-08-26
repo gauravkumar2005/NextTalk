@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="rounded-2xl bg-gray-100 p-6 sm:p-8">
             <div className="grid grid-cols-2 gap-4">
 
-              <div className="rounded-xl bg-white p-5 shadow-sm">
+              <div className="rounded-xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
                 <MessageCircle className="mb-3 text-blue-500" size={24} />
                 <h3 className="font-semibold text-gray-900">
                   Messaging
