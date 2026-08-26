@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="rounded-xl bg-white p-5 shadow-sm">
+              <div className="rounded-xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
                 <Users className="mb-3 text-blue-500" size={24} />
                 <h3 className="font-semibold text-gray-900">
                   Community
