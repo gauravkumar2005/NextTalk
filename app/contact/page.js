@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
 
           {/* Contact Information */}
-          <div className="rounded-2xl bg-gray-100 p-6 sm:p-8">
+          <div className="rounded-2xl bg-gray-100 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
             <p className="text-sm font-semibold text-blue-500">
               GET IN TOUCH
