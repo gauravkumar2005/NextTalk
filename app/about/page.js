@@ -131,7 +131,7 @@ export default function AboutPage() {
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
 
-            <div className="rounded-xl bg-white p-6 text-left shadow-sm">
+          <div className="rounded-xl bg-white p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
               <h3 className="font-semibold text-gray-900">
                 Clean Interface
               </h3>
