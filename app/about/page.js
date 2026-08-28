@@ -141,7 +141,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-xl bg-white p-6 text-left shadow-sm">
+            <div className="rounded-xl bg-white p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
               <h3 className="font-semibold text-gray-900">
                 Real-Time Chat
               </h3>
