@@ -51,7 +51,9 @@ export default function ProfilePage() {
             <div className="flex items-center gap-3">
               <MessageCircle className="text-gray-600 w-5 h-5 sm:w-6 sm:h-6" />
               <div>
-                <p className="font-medium text-sm sm:text-base">Chats</p>
+                <Link href="/chat">
+                  <p className="font-medium text-sm sm:text-base">Chats</p>
+                </Link>
                 <p className="text-xs sm:text-sm text-gray-500">
                   Check your chat history
                 </p>
