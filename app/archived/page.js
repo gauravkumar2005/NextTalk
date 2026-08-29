@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ArchivedPage() {
   const archivedChats = [
     {
@@ -31,9 +33,11 @@ export default function ArchivedPage() {
             </p>
           </div>
 
-          <button className="bg-white text-black px-5 py-2 rounded-2xl font-semibold hover:scale-105 transition duration-300">
-            Back
-          </button>
+          <Link href="/">
+            <button className="bg-white text-black px-5 py-2 rounded-2xl font-semibold hover:scale-105 transition duration-300">
+              Back
+            </button>
+          </Link>
         </div>
 
         <div className="space-y-4">
