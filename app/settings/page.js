@@ -57,7 +57,9 @@ export default function SettingsPage() {
 
         {/* Security */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>🛡️ Security</span>
+           <Link href="/security">
+            <span>🛡️ Security</span>
+           </Link>
           <span className="text-gray-400">›</span>
         </div>
 
