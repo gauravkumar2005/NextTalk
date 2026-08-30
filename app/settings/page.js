@@ -49,7 +49,9 @@ export default function SettingsPage() {
 
         {/* Privacy */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>🔒 Privacy</span>
+           <Link href="/privacy">
+            <span>🔒 Privacy</span>
+           </Link>
           <span className="text-gray-400">›</span>
         </div>
 
