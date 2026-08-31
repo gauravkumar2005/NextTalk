@@ -43,7 +43,9 @@ export default function SettingsPage() {
 
         {/* Account */}
         <div className="flex items-center justify-between py-3 border-b">
-          <span>👤 Account</span>
+          <Link href="/account">
+            <span>👤 Account</span>
+          </Link>
           <span className="text-gray-400">›</span>
         </div>
 
