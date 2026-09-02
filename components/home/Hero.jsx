@@ -20,7 +20,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600">
               <MessageCircle size={17} />
-              Simple & 
+              Simple & Real-Time Messaging
             </div>
 
             {/* Heading */}
