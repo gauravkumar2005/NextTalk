@@ -52,6 +52,13 @@ export default function Footer() {
                 About
               </Link>
 
+              <Link href="/chat" className="transition hover:text-white">
+                Chat
+              </Link>
+
+              <Link href="/contact" className="transition hover:text-white">
+                Contact
+              </Link>
             </div>
           </div>
 
